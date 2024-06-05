@@ -64,7 +64,7 @@ exports.login = async (req, res) => {
             email: user.email,
             // Add other relevant user information if needed
         };
-        const token = jwt.sign(tokenPayload, JWT_SECRET);
+        const token = jwt.sign(tokenPayload, "JWT_SECRET");
         
         res.json({ 
             success: true, 
